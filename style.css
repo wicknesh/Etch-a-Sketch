@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainContainer {
+    border: 2px black solid;
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    height: 500px;
+    margin: 100px 50px 0 50px;
+}
+
+.square {
+    flex-grow: 1;
+    border: 1px black solid;
+    height: 31.25px;
+    width: 43.75px;
+    box-sizing: border-box;
+}
