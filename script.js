@@ -18,16 +18,20 @@ const hoverSquares = document.querySelectorAll('.square');
 
 hovering(hoverSquares);
 
-let opa = 0;
-function addOpacity(){
-    return opa+=0.2;
+// let opa = 0;
+// function addOpacity(){
+//     return opa+=0.2;
+// }
+
+function randomColor() {
+    return `rgb(${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)})`
 }
 
 function hovering(hoverSquares) {
     hoverSquares.forEach(square => {
         square.addEventListener('mouseover', () => {
-            square.style.background = 'black';
-            square.style.opacity = addOpacity();
+            square.style.background = randomColor();
+            //square.style.opacity = addOpacity();
         });
     });
 }
